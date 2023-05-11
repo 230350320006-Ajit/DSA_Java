@@ -5,8 +5,10 @@
 package com.mycompany.arraycircularqueue;
 
 /**
- *
- * @author Upgrade
+ *  in this project,
+        front and rear is init with 0, so for isFull condition 1 location is always blank (can't use)
+        we can use (N-1) locations , this is only one dis-advantage of this Style, rather than,
+        this style is efficient than others
  */
 public class CircularQueueImple implements CircularQueue{
     int arr[];
