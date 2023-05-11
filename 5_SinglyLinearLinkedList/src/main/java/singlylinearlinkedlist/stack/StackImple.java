@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package singlylinearlinkedlist.stack;
+
+/**
+ *
+ * @author Upgrade
+ */
+import singlylinearlinkedlist.SinglyLinearImple;
+public class StackImple extends SinglyLinearImple{
+
+    public void push(int i)
+    {
+        addFirst(i);
+    }
+    
+    public int pop()
+    {
+        return deleteFirst();
+    }
+    
+    public int peek()
+    {
+        int arr[]=traverse();
+        return arr[0];
+    }
+    
+    public static void main(String[] args) {
+        StackImple s= new StackImple();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        
+        System.out.println("peek :"+s.peek());
+        System.out.println("pop :"+s.pop());
+        System.out.println("pop :"+s.pop());
+        System.out.println("pop :"+s.pop());
+       // System.out.println(s.pop());        
+    }
+}
