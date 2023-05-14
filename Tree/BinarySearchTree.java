@@ -233,23 +233,6 @@ class BinarySearchTree {
 		return new Node[] { null, null };
 	}
 	 
-	 // count number of nodes in tree
-    public int count(Node trav)
-    {
-        int count = 0;
-        if(trav == null)
-        return 0;
-        else{
-            count++;
-            count = count + count(trav.left);
-            count = count + count(trav.right);
-            return count;
-        }
-    }
-    public int countNodes()
-    {
-        return count(root);
-    }
 	
 	public void delete(int val) {
 		Node trav, parent;
