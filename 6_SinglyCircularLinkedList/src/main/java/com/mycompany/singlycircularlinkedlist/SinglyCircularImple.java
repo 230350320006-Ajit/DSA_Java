@@ -80,12 +80,10 @@ public class SinglyCircularImple implements SinglyCircularInterface {
     public void addLast(int i)
     {
      Node newNode = new Node(i);
-        if(tail==null)
+       if(isEmpty())
         {
-            tail=newNode;
-            tail.next=tail;
-            size++;
-        } 
+            addFirst(i);
+        }
         else
         {               
             newNode.next = tail.next;
