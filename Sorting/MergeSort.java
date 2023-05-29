@@ -58,10 +58,10 @@ class MergeSort
             arr[i] = sc.nextInt();
         }
         
-        System.out.println("after selection sort :");
+        System.out.println("before sort :");
         System.out.println(Arrays.toString(arr));
 
-        System.out.println("after selection sort :");
+        System.out.println("after Merge sort :");
         arr = mergeSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
